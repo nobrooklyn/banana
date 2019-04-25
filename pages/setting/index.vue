@@ -26,13 +26,13 @@
             <User/>
           </v-tab-item>
           <v-tab-item id="group">
-            <h2>Groups</h2>
+            <Group/>
           </v-tab-item>
           <v-tab-item id="office">
-            <h2>Offices</h2>
+            <Office/>
           </v-tab-item>
           <v-tab-item id="item">
-            <h2>Items</h2>
+            <Item/>
           </v-tab-item>
         </v-tabs>
       </v-card>
@@ -42,10 +42,16 @@
 
 <script>
 import User from "~/pages/setting/user/index.vue";
+import Group from "~/pages/setting/group/index.vue";
+import Office from "~/pages/setting/office/index.vue";
+import Item from "~/pages/setting/item/index.vue";
 
 export default {
   components: {
-    User
+    User,
+    Group,
+    Office,
+    Item
   }
 };
 </script>
